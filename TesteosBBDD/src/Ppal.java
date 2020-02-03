@@ -159,8 +159,29 @@ public class Ppal {
 		}
 		System.out.println("};");
 		
+		System.out.println("------------------------------------------------------------------------------------------------------------------");
 		
+		Departamento dep1=new Departamento(1,"DIRECCION",1);
+		Departamento dep2=new Departamento(2,"RESTAURACION",1);
+		Departamento dep3=new Departamento(3,"MANTENIMIENTO",1);
+		Departamento dep4=new Departamento(4,"SERVICIO DE HABITACIONES",1);
+		Departamento dep5=new Departamento(5,"INSTALACIONES DEPORTIVAS",1);
 		
+		Empleado emp1=new Empleado();
+		Empleado emp2=new Empleado();
+		Empleado emp3=new Empleado();
+		Empleado emp4=new Empleado();
+		Empleado emp5=new Empleado();
+		Empleado emp6=new Empleado();
+		Empleado emp7=new Empleado();
+		Empleado emp8=new Empleado();
+		Empleado emp9=new Empleado();
+		Empleado emp10=new Empleado();
+		Empleado emp11=new Empleado();
+		Empleado emp12=new Empleado();
+		Empleado emp13=new Empleado();
+		Empleado emp14=new Empleado();
+		Empleado emp15=new Empleado();
 		
 		
 		
@@ -173,5 +194,11 @@ public class Ppal {
 		
 
 	}
+	
+//	public static String generarDNI() {
+//		
+//		
+//		
+//	}
 
 }
