@@ -27,10 +27,10 @@ public class Empleado {
 		super();
 	}
 
-	public Empleado(int diEmpleado, String dni, String nombre, String apellidos, int dep, int servicio, String funcion,
+	public Empleado(int idEmpleado, String dni, String nombre, String apellidos, int dep, int servicio, String funcion,
 			double sueldoAnual, int idJefe, String activo) {
 		super();
-		this.idEmpleado = diEmpleado;
+		this.idEmpleado = idEmpleado;
 		this.dni = dni;
 		this.nombre = nombre;
 		this.apellidos = apellidos;
