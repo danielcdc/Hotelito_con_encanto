@@ -3,6 +3,19 @@ public class Ppal {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		double []pHab1=new double [120];
+		double []pHab2=new double [120];
+		double []pHab3=new double [120];
+		double []pHab4=new double [120];
+		double []pHab5=new double [120];
+		double []pHab6=new double [120];
+		double []pHab7=new double [120];
+		double []pHab8=new double [120];
+		double []pHab9=new double [120];
+		double []pHab10=new double [120];
+		
+		
+		
 		
 		TipoHabitacion tipHab1=new TipoHabitacion(1,"Suite",
 				"Perfecta para personas solventes, incluye chimenea para quemar billetes.");
@@ -44,6 +57,108 @@ public class Ppal {
 		hab8.generadorInsertHabitacion();
 		hab9.generadorInsertHabitacion();
 		hab10.generadorInsertHabitacion();
+		
+		for(int i=0;i<pHab1.length;i++) {
+			pHab1[i]=hab1.calcularPrecio();
+		}
+		
+		for(int i=0;i<pHab2.length;i++) {
+			pHab2[i]=hab2.calcularPrecio();
+		}
+		
+		for(int i=0;i<pHab3.length;i++) {
+			pHab3[i]=hab3.calcularPrecio();
+		}
+		
+		for(int i=0;i<pHab4.length;i++) {
+			pHab4[i]=hab4.calcularPrecio();
+		}
+		
+		for(int i=0;i<pHab5.length;i++) {
+			pHab5[i]=hab5.calcularPrecio();
+		}
+		
+		for(int i=0;i<pHab6.length;i++) {
+			pHab6[i]=hab6.calcularPrecio();
+		}
+		
+		for(int i=0;i<pHab7.length;i++) {
+			pHab7[i]=hab7.calcularPrecio();
+		}
+		
+		for(int i=0;i<pHab8.length;i++) {
+			pHab8[i]=hab8.calcularPrecio();
+		}
+		
+		for(int i=0;i<pHab9.length;i++) {
+			pHab9[i]=hab9.calcularPrecio();
+		}
+		
+		for(int i=0;i<pHab10.length;i++) {
+			pHab10[i]=hab10.calcularPrecio();
+		}
+		
+		
+		System.out.printf("double []pHab1={");
+		for(int i=0;i<pHab1.length;i++) {
+			System.out.printf("%.2f|",pHab1[i]);
+		}
+		System.out.println("};");
+		
+		System.out.printf("double []pHab2={");
+		for(int i=0;i<pHab2.length;i++) {
+			System.out.printf("%.2f|",pHab2[i]);
+		}
+		System.out.println("};");
+		
+		System.out.printf("double []pHab3={");
+		for(int i=0;i<pHab3.length;i++) {
+			System.out.printf("%.2f|",pHab3[i]);
+		}
+		System.out.println("};");
+		
+		System.out.printf("double []pHab4={");
+		for(int i=0;i<pHab4.length;i++) {
+			System.out.printf("%.2f|",pHab4[i]);
+		}
+		System.out.println("};");
+		
+		System.out.printf("double []pHab5={");
+		for(int i=0;i<pHab5.length;i++) {
+			System.out.printf("%.2f|",pHab5[i]);
+		}
+		System.out.println("};");
+		
+		System.out.printf("double []pHab6={");
+		for(int i=0;i<pHab6.length;i++) {
+			System.out.printf("%.2f|",pHab6[i]);
+		}
+		System.out.println("};");
+		
+		System.out.printf("double []pHab7={");
+		for(int i=0;i<pHab7.length;i++) {
+			System.out.printf("%.2f|",pHab7[i]);
+		}
+		System.out.println("};");
+		
+		System.out.printf("double []pHab8={");
+		for(int i=0;i<pHab8.length;i++) {
+			System.out.printf("%.2f|",pHab8[i]);
+		}
+		System.out.println("};");
+		
+		System.out.printf("double []pHab9={");
+		for(int i=0;i<pHab9.length;i++) {
+			System.out.printf("%.2f|",pHab9[i]);
+		}
+		System.out.println("};");
+		
+		System.out.printf("double []pHab10={");
+		for(int i=0;i<pHab10.length;i++) {
+			System.out.printf("%.2f|",pHab10[i]);
+		}
+		System.out.println("};");
+		
 		
 		
 		
