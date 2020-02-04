@@ -21,8 +21,7 @@ public class Ppal {
 		int precioH[] = {45,105};
 		//Habit hab1 = new Habit(1, 52.64);
 		//Habit hab2 = new Habit(2, 105.17);
-		Servic s1 = new Servic(55);
-		Servic s2 = new Servic(105);
+		Double precio=0.00;
 		Double precioS[] = {(65.36),(105.12)};
 //		LocalDate entrada = LocalDate.of(2020, Month.JANUARY, 1);
 //		LocalDate salida = entrada.plusDays(2);
@@ -120,21 +119,37 @@ public class Ppal {
 			
 		}
 		
+		PackServicio pack = new PackServicio();
+		
 		for(int i=0; i < 120; i++) {
 			
 			
 			int ale = r.nextInt(8-1)+1;
 			int ale2 = r.nextInt(3-0)+0;
 			int aleC = r.nextInt(3000-0)+0;
+			int aleServ = r.nextInt(3-0)+0;
 			
 			LocalDate salida = entrada.plusDays(ale);
 			
-			System.out.print("INSERT INTO HOT_RESERVA (ID_RESERVA, DNI_CLIENTE, ID_HABITACION, CHECK_IN, CHECK_OUT, PRECIO_HAB_DIA, PRECIO_SERV_DIA, PRECIO_TOTAL) \r\n" + 
+			
+			precio=pack.generarServicios(aleServ, listaCliente[aleC], precio);
+			
+			
+			System.out.print("INSERT INTO HOT_RESERVA (ID_RESERVA| DNI_CLIENTE| ID_HABITACION| CHECK_IN| CHECK_OUT| PRECIO_HAB_DIA| PRECIO_SERV_DIA| PRECIO_TOTAL) \r\n" + 
 					"VALUES ("+ listaCliente[aleC] +"| '"+ listaDNI[1] +"'| " + 10 +"| TO_DATE('"+ entrada 
-					+" 15:00'| 'YYYY-MM-DD HH24:MI')| TO_DATE('"+ salida +" 12:00'| 'YYYY-MM-DD HH24:MI')| " + pHab10[i] + "| " + precioS[1] );
-			System.out.printf("| %.2f);\n",((pHab1[i]+precioS[1])*ale));
+					+" 15:00'| 'YYYY-MM-DD HH24:MI')| TO_DATE('"+ salida +" 12:00'| 'YYYY-MM-DD HH24:MI')| " + pHab10[i] + "| " + precio );
+			System.out.printf("| %.2f);\n",((pHab1[i]+precio)*ale));
+			
 			entrada = salida.plusDays(ale2);
+			
+			
+			
+			
 		}
+		
+		
+//		System.out.println(pack);
+//		pack.imprimirInsertInto();
 		
 		
 	}
