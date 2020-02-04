@@ -1,5 +1,5 @@
 package servicios;
-	
+
 /*
  * Clase que modela los diferentes servicios que ofrece el hotel a sus clientes.
  * Por la simplicidad del modelo que planteamos, no se realizarán clases específica.
@@ -10,11 +10,12 @@ public class Servicio {
 	private String nombre;
 	private String descripcion;
 	private double precioDia;
-	
+
 	// Constructores
 	public Servicio() {
-		
+
 	}
+
 	public Servicio(int idServicio, String nombre, String descripcion, double precioDia) {
 		super();
 		this.idServicio = idServicio;
@@ -22,41 +23,44 @@ public class Servicio {
 		this.descripcion = descripcion;
 		this.precioDia = precioDia;
 	}
-	
+
 	// Auto-generated
 	public int getIdServicio() {
 		return idServicio;
 	}
+
 	public void setIdServicio(int idServicio) {
 		this.idServicio = idServicio;
 	}
+
 	public String getNombre() {
 		return nombre;
 	}
+
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
+
 	public String getDescripcion() {
 		return descripcion;
 	}
+
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
+
 	public double getPrecioDia() {
 		return precioDia;
 	}
+
 	public void setPrecioDia(double precioDia) {
 		this.precioDia = precioDia;
 	}
+
 	@Override
 	public String toString() {
 		return "Servicio [idServicio=" + idServicio + ", nombre=" + nombre + ", descripcion=" + descripcion
 				+ ", precioDia=" + precioDia + "]";
 	}
-	
-	
-	
-	
-	
-	
+
 }
