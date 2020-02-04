@@ -189,6 +189,8 @@ public class Ppal {
 		Empleado emp13=new Empleado(13,"40773609Z","Carlos","Romero Navarro",4,4,"Costura",12000,12,"S");
 		Empleado emp14=new Empleado(14,"95207603T","Mario","Torres Iglesias",5,5,"Entrenador personal",16000,2,"S");
 		Empleado emp15=new Empleado(15,"36003404D","Alfonso","Garrido Morales",5,5,"Socorrista",12000,14,"S");
+		Empleado emp16=new Empleado(16,"12006027G","Pepe","De la rosa muñoz",5,5,"Servicio de spa",13000,14,"S");
+		Empleado emp17=new Empleado(17,"81450263H","Laura","Ortiz Perez",4,4,"Servicio de guarderia",13000,12,"S");
 		
 		emp1.generarInsertEmpleado();
 		emp2.generarInsertEmpleado();
