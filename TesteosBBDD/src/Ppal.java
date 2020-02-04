@@ -174,21 +174,21 @@ public class Ppal {
 		dep5.generarInsertDepartamento();
 		
 		
-		Empleado emp1=new Empleado(1,"11111111A","Pablo","Pérez Lozano",1,1,"Jefe",30000,0,"S");
-		Empleado emp2=new Empleado(2,"11111111B","Jose","García Torrente",1,1,"Jefe",30000,1,"S");
-		Empleado emp3=new Empleado(3,"11111111C","Arturo","Mota Ruiz",2,2,"Camarero",14000,7,"S");
-		Empleado emp4=new Empleado(4,"11111111D","Antonio","Torrecilla Palomo",2,2,"Cocinero",16000,7,"S");
-		Empleado emp5=new Empleado(5,"11111111E","Miguel","Aillet Llorente",2,2,"Lavaplatos",11000,7,"S");
-		Empleado emp6=new Empleado(6,"11111111F","Maria","Moreno Antunez",2,2,"Camarero",14000,7,"S");
-		Empleado emp7=new Empleado(7,"11111111G","Ana","Martinez Montaño",2,2,"JefeRestauracion",18000,1,"S");
-		Empleado emp8=new Empleado(8,"11111111H","Manuel","Ordoñez Matito",3,3,"Tecnico reparaciones",15000,1,"S");
-		Empleado emp9=new Empleado(9,"11111111I","Rafael","Ayuso Martin",4,4,"Limpiador",11000,12,"S");
-		Empleado emp10=new Empleado(10,"1111111J","Manuela","Rodriguez Sanchez",4,4,"Limpiador",11000,12,"S");
-		Empleado emp11=new Empleado(11,"1111111K","Roberto","Abigail Hernandez",4,4,"Asistente de lavanderia",11500,12,"S");
-		Empleado emp12=new Empleado(12,"1111111L","Isabel","Jimenez Castro",4,4,"Jefa de Limpieza",14000,2,"S");
-		Empleado emp13=new Empleado(13,"11111111M","Carlos","Romero Navarro",4,4,"Costura",12000,12,"S");
-		Empleado emp14=new Empleado(14,"1111111N","Mario","Torres Iglesias",5,5,"Entrenador personal",16000,2,"S");
-		Empleado emp15=new Empleado(15,"1111111O","Alfonso","Garrido Morales",5,5,"Socorrista",12000,14,"S");
+		Empleado emp1=new Empleado(1,"80169812T","Pablo","Pérez Lozano",1,1,"Jefe",30000,0,"S");
+		Empleado emp2=new Empleado(2,"31778301Y","Jose","García Torrente",1,1,"Jefe",30000,1,"S");
+		Empleado emp3=new Empleado(3,"12195887E","Arturo","Mota Ruiz",2,2,"Camarero",14000,7,"S");
+		Empleado emp4=new Empleado(4,"96189948S","Antonio","Torrecilla Palomo",2,2,"Cocinero",16000,7,"S");
+		Empleado emp5=new Empleado(5,"15095736P","Miguel","Aillet Llorente",2,2,"Lavaplatos",11000,7,"S");
+		Empleado emp6=new Empleado(6,"57380066B","Maria","Moreno Antunez",2,2,"Camarero",14000,7,"S");
+		Empleado emp7=new Empleado(7,"45046334Y","Ana","Martinez Montaño",2,2,"JefeRestauracion",18000,1,"S");
+		Empleado emp8=new Empleado(8,"27446847G","Manuel","Ordoñez Matito",3,3,"Tecnico reparaciones",15000,1,"S");
+		Empleado emp9=new Empleado(9,"16300766E","Rafael","Ayuso Martin",4,4,"Limpiador",11000,12,"S");
+		Empleado emp10=new Empleado(10,"84882363N","Manuela","Rodriguez Sanchez",4,4,"Limpiador",11000,12,"S");
+		Empleado emp11=new Empleado(11,"47437366G","Roberto","Abigail Hernandez",4,4,"Asistente de lavanderia",11500,12,"S");
+		Empleado emp12=new Empleado(12,"33869097X","Isabel","Jimenez Castro",4,4,"Jefa de Limpieza",14000,2,"S");
+		Empleado emp13=new Empleado(13,"40773609Z","Carlos","Romero Navarro",4,4,"Costura",12000,12,"S");
+		Empleado emp14=new Empleado(14,"95207603T","Mario","Torres Iglesias",5,5,"Entrenador personal",16000,2,"S");
+		Empleado emp15=new Empleado(15,"36003404D","Alfonso","Garrido Morales",5,5,"Socorrista",12000,14,"S");
 		
 		emp1.generarInsertEmpleado();
 		emp2.generarInsertEmpleado();
