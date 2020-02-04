@@ -112,9 +112,9 @@ public class Ppal {
 			pHab10[i]=hab10.calcularPrecio();
 		}
 		
-		int listaCliente[]=new int[3001];
+		int listaCliente[]=new int[3000];
 		
-		for(int i=0;i<3001;i++) {
+		for(int i=0;i<3000;i++) {
 			
 			listaCliente[i]=i;
 			
@@ -130,9 +130,9 @@ public class Ppal {
 			LocalDate salida = entrada.plusDays(ale);
 			
 			System.out.print("INSERT INTO HOT_RESERVA (ID_RESERVA, DNI_CLIENTE, ID_HABITACION, CHECK_IN, CHECK_OUT, PRECIO_HAB_DIA, PRECIO_SERV_DIA, PRECIO_TOTAL) \r\n" + 
-					"VALUES ("+ listaCliente[aleC] +", '"+ listaDNI[1] +"', " + 10 +", TO_DATE('"+ entrada 
-					+" 15:00', 'YYYY-MM-DD HH24:MI'), TO_DATE('"+ salida +" 12:00', 'YYYY-MM-DD HH24:MI'), " + pHab10[i] + ", " + precioS[1] );
-			System.out.printf(", %.2f);\n",((pHab1[i]+precioS[1])*ale));
+					"VALUES ("+ listaCliente[aleC] +"| '"+ listaDNI[1] +"'| " + 10 +"| TO_DATE('"+ entrada 
+					+" 15:00'| 'YYYY-MM-DD HH24:MI')| TO_DATE('"+ salida +" 12:00'| 'YYYY-MM-DD HH24:MI')| " + pHab10[i] + "| " + precioS[1] );
+			System.out.printf("| %.2f);\n",((pHab1[i]+precioS[1])*ale));
 			entrada = salida.plusDays(ale2);
 		}
 		
