@@ -50,7 +50,11 @@ public class Departamento {
 	}
 	
 	
-	
+	public void generarInsertDepartamento() {
+		
+		System.out.printf("INSERT INTO HOT_DEPARTAMENTO VALUES (%d,'%s',%d);\n",idDepartamento,nombre,idJefe);
+		
+	}
 	
 	
 	

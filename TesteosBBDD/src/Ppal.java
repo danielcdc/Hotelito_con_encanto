@@ -167,6 +167,13 @@ public class Ppal {
 		Departamento dep4=new Departamento(4,"SERVICIO DE HABITACIONES",1);
 		Departamento dep5=new Departamento(5,"INSTALACIONES DEPORTIVAS",1);
 		
+		dep1.generarInsertDepartamento();
+		dep2.generarInsertDepartamento();
+		dep3.generarInsertDepartamento();
+		dep4.generarInsertDepartamento();
+		dep5.generarInsertDepartamento();
+		
+		
 		Empleado emp1=new Empleado(1,"11111111A","Pablo","Pérez Lozano",1,1,"Jefe",30000,0,"S");
 		Empleado emp2=new Empleado(2,"11111111B","Jose","García Torrente",1,1,"Jefe",30000,1,"S");
 		Empleado emp3=new Empleado(3,"11111111C","Arturo","Mota Ruiz",2,2,"Camarero",14000,7,"S");
@@ -183,6 +190,21 @@ public class Ppal {
 		Empleado emp14=new Empleado(14,"1111111N","Mario","Torres Iglesias",5,5,"Entrenador personal",16000,2,"S");
 		Empleado emp15=new Empleado(15,"1111111O","Alfonso","Garrido Morales",5,5,"Socorrista",12000,14,"S");
 		
+		emp1.generarInsertEmpleado();
+		emp2.generarInsertEmpleado();
+		emp3.generarInsertEmpleado();
+		emp4.generarInsertEmpleado();
+		emp5.generarInsertEmpleado();
+		emp6.generarInsertEmpleado();
+		emp7.generarInsertEmpleado();
+		emp8.generarInsertEmpleado();
+		emp9.generarInsertEmpleado();
+		emp10.generarInsertEmpleado();
+		emp11.generarInsertEmpleado();
+		emp12.generarInsertEmpleado();
+		emp13.generarInsertEmpleado();
+		emp14.generarInsertEmpleado();
+		emp15.generarInsertEmpleado();
 		
 		
 		

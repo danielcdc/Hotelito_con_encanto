@@ -129,6 +129,13 @@ public class Empleado {
 				+ ", idJefe=" + idJefe + ", activo=" + activo + "]";
 	}
 	
+	public void generarInsertEmpleado(){
+		
+		System.out.printf("INSERT INTO HOT_EMPLEADO VALUES (%d|'%s'|'%s'|'%s'|%d,%d|'%s'|%.2f|%d|'%s');\n",
+				idEmpleado,dni,nombre,apellidos,dep,servicio,funcion,sueldoAnual,idJefe,activo);
+		
+	}
+	
 	
 	
 	
