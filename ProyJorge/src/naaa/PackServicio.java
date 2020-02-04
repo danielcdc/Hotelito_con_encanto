@@ -115,6 +115,22 @@ public class PackServicio {
 				aleat2 = r.nextInt(10-1)+1;
 				aleat3 = r.nextInt(10-1)+1;
 				
+				do {	
+					
+					if(aleat2 == aleat3) {
+						aleat3 = r.nextInt(10-1)+1;
+					}
+					
+					if(aleat2 == aleat) {
+						aleat = r.nextInt(10-1)+1;
+					}
+					
+					if(aleat == aleat3) {
+						aleat3 = r.nextInt(10-1)+1;
+					}
+				}while(aleat2 == aleat3 || aleat == aleat3 || aleat2 == aleat );	
+				
+				
 				if(aleat == 4) {
 					aleat2 = r.nextInt(10-5)+5;
 					aleat3 = r.nextInt(10-5)+5;
@@ -145,8 +161,22 @@ public class PackServicio {
 						}
 					}while(aleat == aleat2);
 				}
-					
-					
+				
+				
+				System.out.print("INSERT INTO HOT_LINEA (ID_RESERVA| ID_SERVICIO) \r\n" + 
+						"VALUES ("+ idReserva+"| "+ aleat +");\n" );
+				System.out.print("INSERT INTO HOT_LINEA (ID_RESERVA| ID_SERVICIO) \r\n" + 
+						"VALUES ("+ idReserva+"| "+ aleat2 +");\n" );
+				System.out.print("INSERT INTO HOT_LINEA (ID_RESERVA| ID_SERVICIO) \r\n" + 
+						"VALUES ("+ idReserva+"| "+ aleat3 +");\n" );
+				precio=listaServicios[(aleat-1)].getPrecioDia() + listaServicios[(aleat2-1)].getPrecioDia() + listaServicios[(aleat3-1)].getPrecioDia();
+				
+			}else if(numAleat==4) {
+				aleat = r.nextInt(10-1)+1;
+				aleat2 = r.nextInt(10-1)+1;
+				aleat3 = r.nextInt(10-1)+1;
+				aleat4 = r.nextInt(10-1)+1;
+				
 				do {	
 					
 					if(aleat2 == aleat3) {
@@ -160,14 +190,103 @@ public class PackServicio {
 					if(aleat == aleat3) {
 						aleat3 = r.nextInt(10-1)+1;
 					}
-				}while(aleat2 == aleat3 || aleat == aleat3 || aleat2 == aleat );	
+					
+					if(aleat4 == aleat3) {
+						aleat3 = r.nextInt(10-1)+1;
+					}
+					
+					if(aleat4 == aleat) {
+						aleat = r.nextInt(10-1)+1;
+					}
+					
+					if(aleat4 == aleat2) {
+						aleat2 = r.nextInt(10-1)+1;
+					}
+				}while(aleat2 == aleat3 || aleat == aleat3 || aleat2 == aleat || aleat2 == aleat4 || aleat4 == aleat || aleat3 == aleat4);
+				
+				if(aleat == 4) {
+					aleat2 = r.nextInt(10-5)+5;
+					aleat3 = r.nextInt(10-5)+5;
+					aleat4 = r.nextInt(10-5)+5;
+					
+					do {	
+						if(aleat3 == aleat2) {
+							aleat2 = r.nextInt(10-5)+5;
+						}
+						
+						if(aleat3 == aleat4) {
+							aleat4 = r.nextInt(10-5)+5;
+						}
+						
+						if(aleat4 == aleat2) {
+							aleat2 = r.nextInt(10-5)+5;
+						}
+					}while(aleat3 == aleat2 || aleat4 == aleat2 || aleat3 == aleat4);
+				}
+				
+				if(aleat2 == 4) {
+					aleat = r.nextInt(10-5)+5;
+					aleat3 = r.nextInt(10-5)+5;
+					aleat4 = r.nextInt(10-5)+5;
+					
+					do {	
+						if(aleat3 == aleat) {
+							aleat = r.nextInt(10-5)+5;
+						}
+						
+						if(aleat == aleat4) {
+							aleat4 = r.nextInt(10-5)+5;
+						}
+						
+						if(aleat4 == aleat3) {
+							aleat3 = r.nextInt(10-5)+5;
+						}
+					}while(aleat3 == aleat || aleat == aleat4 || aleat3 == aleat4);
+				}
 				
 				
+				if(aleat3 == 4) {
+					aleat2 = r.nextInt(10-5)+5;
+					aleat = r.nextInt(10-5)+5;
+					aleat4 = r.nextInt(10-5)+5;
+					
+					do {	
+						if(aleat2 == aleat) {
+							aleat = r.nextInt(10-5)+5;
+						}
+						
+						if(aleat == aleat4) {
+							aleat4 = r.nextInt(10-5)+5;
+						}
+						
+						if(aleat4 == aleat2) {
+							aleat2 = r.nextInt(10-5)+5;
+						}
+					}while(aleat2 == aleat || aleat == aleat4 || aleat2 == aleat4);
+				}
 				
 				
-				
-				
-				
+				if(aleat4 == 4) {
+					
+					aleat2 = r.nextInt(10-5)+5;
+					aleat = r.nextInt(10-5)+5;
+					aleat3 = r.nextInt(10-5)+5;
+					
+					
+					do {	
+						if(aleat3 == aleat) {
+							aleat = r.nextInt(10-5)+5;
+						}
+						
+						if(aleat == aleat2) {
+							aleat2 = r.nextInt(10-5)+5;
+						}
+						
+						if(aleat2 == aleat3) {
+							aleat3 = r.nextInt(10-5)+5;
+						}
+					}while(aleat3 == aleat || aleat == aleat2 || aleat3 == aleat2);
+				}
 				
 				
 				System.out.print("INSERT INTO HOT_LINEA (ID_RESERVA| ID_SERVICIO) \r\n" + 
@@ -176,7 +295,10 @@ public class PackServicio {
 						"VALUES ("+ idReserva+"| "+ aleat2 +");\n" );
 				System.out.print("INSERT INTO HOT_LINEA (ID_RESERVA| ID_SERVICIO) \r\n" + 
 						"VALUES ("+ idReserva+"| "+ aleat3 +");\n" );
-				precio=listaServicios[(aleat-1)].getPrecioDia() + listaServicios[(aleat2-1)].getPrecioDia() + listaServicios[(aleat3-1)].getPrecioDia();
+				System.out.print("INSERT INTO HOT_LINEA (ID_RESERVA| ID_SERVICIO) \r\n" + 
+						"VALUES ("+ idReserva+"| "+ aleat4 +");\n" );
+				precio=listaServicios[(aleat-1)].getPrecioDia() + listaServicios[(aleat2-1)].getPrecioDia() 
+						+ listaServicios[(aleat3-1)].getPrecioDia() + listaServicios[(aleat4-1)].getPrecioDia();
 			}
 			
 			return precio;
