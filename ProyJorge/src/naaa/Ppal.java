@@ -41,43 +41,43 @@ public class Ppal {
 		Habitacion hab10=new Habitacion(10,4);
 		
 		for(int i=0;i<pHab1.length;i++) {
-			pHab1[i]=r.nextInt(300-200)+200;
+			pHab1[i]=hab1.calcularPrecio();
 		}
 		
 		for(int i=0;i<pHab2.length;i++) {
-			pHab2[i]=r.nextInt(180-140)+140;
+			pHab2[i]=hab2.calcularPrecio();
 		}
 		
 		for(int i=0;i<pHab3.length;i++) {
-			pHab3[i]=r.nextInt(180-140)+140;
+			pHab3[i]=hab3.calcularPrecio();
 		}
 		
 		for(int i=0;i<pHab4.length;i++) {
-			pHab4[i]=r.nextInt(180-140)+140;
+			pHab4[i]=hab4.calcularPrecio();
 		}
 		
 		for(int i=0;i<pHab5.length;i++) {
-			pHab5[i]=r.nextInt(150-120)+120;
+			pHab5[i]=hab5.calcularPrecio();
 		}
 		
 		for(int i=0;i<pHab6.length;i++) {
-			pHab6[i]=r.nextInt(150-120)+120;
+			pHab6[i]=hab6.calcularPrecio();
 		}
 		
 		for(int i=0;i<pHab7.length;i++) {
-			pHab7[i]=r.nextInt(150-120)+120;
+			pHab7[i]=hab7.calcularPrecio();
 		}
 		
 		for(int i=0;i<pHab8.length;i++) {
-			pHab8[i]=r.nextInt(130-80)+80;
+			pHab8[i]=hab8.calcularPrecio();
 		}
 		
 		for(int i=0;i<pHab9.length;i++) {
-			pHab9[i]=r.nextInt(130-80)+80;
+			pHab9[i]=hab9.calcularPrecio();
 		}
 		
 		for(int i=0;i<pHab10.length;i++) {
-			pHab10[i]=r.nextInt(130-80)+80;
+			pHab10[i]=hab10.calcularPrecio();
 		}
 		
 		int listaCliente[]=new int[1750];
@@ -106,9 +106,9 @@ public class Ppal {
 			
 
 			System.out.print("INSERT INTO HOT_RESERVA (ID_RESERVA| ID_CLIENTE| ID_HABITACION| CHECK_IN| CHECK_OUT| PRECIO_HAB_DIA| PRECIO_SERV_DIA| PRECIO_TOTAL) \r\n" + 
-					"VALUES ( " + (i+1) + " | "+ listaCliente[aleC] +"| " + 10 +"| TO_DATE('"+ entrada 
-					+" 15:00'| 'YYYY-MM-DD HH24:MI')| TO_DATE('"+ salida +" 12:00'| 'YYYY-MM-DD HH24:MI')| " + pHab10[i] + "| " + precio );
-			System.out.printf("| %.2f);\n",((pHab10[i]+precio)*ale));
+					"VALUES ( " + (i+1) + " | "+ listaCliente[aleC] +"| " + 2 +"| TO_DATE('"+ entrada 
+					+" 15:00'| 'YYYY-MM-DD HH24:MI')| TO_DATE('"+ salida +" 12:00'| 'YYYY-MM-DD HH24:MI')| " + pHab2[i] + "| " + precio );
+			System.out.printf("| %.2f);\n",((pHab2[i]+precio)*ale));
 			
 			
 			

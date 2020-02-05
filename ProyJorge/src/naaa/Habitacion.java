@@ -48,16 +48,16 @@ public class Habitacion {
 		Random rn=new Random (System.nanoTime());
 		if(idTipo==1) {
 			precioI=rn.nextInt(300-200)+200;
-			precio=precioI/100.0;
+			precio=precioI;
 		}else if(idTipo==2) {
 			precioI=rn.nextInt(180-140)+140;
-			precio=precioI/100.0;			
+			precio=precioI;			
 		}else if(idTipo==3) {
 			precioI=rn.nextInt(150-120)+120;
-			precio=precioI/100.0;
+			precio=precioI;
 		}else if(idTipo==4) {
 			precioI=rn.nextInt(130-80)+80;
-			precio=precioI/100.0;
+			precio=precioI;
 		}
 		return precio;
 		
