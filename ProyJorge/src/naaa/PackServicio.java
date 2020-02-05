@@ -74,7 +74,7 @@ public class PackServicio {
 		
 		
 		
-		public Double generarServicios(int numAleat, int idReserva, double precio) {
+		public Double generarServicios(int numAleat, double precio) {
 			Random r = new Random();
 			int aleat, aleat2, aleat3, aleat4;
 			boolean fin=false;
@@ -84,7 +84,7 @@ public class PackServicio {
 			}else if(numAleat==1) {
 				aleat = r.nextInt(10-1)+1;
 				System.out.print("INSERT INTO HOT_LINEA (ID_RESERVA| ID_SERVICIO) \r\n" + 
-						"VALUES ("+ idReserva+"| "+ aleat +");\n" );
+						"VALUES ( SEQ_HOT_RESERVA.CURRVAL | "+ aleat +");\n" );
 				precio=listaServicios[(aleat-1)].getPrecioDia();
 				
 			}else if(numAleat==2) {
@@ -106,9 +106,9 @@ public class PackServicio {
 				
 				
 				System.out.print("INSERT INTO HOT_LINEA (ID_RESERVA| ID_SERVICIO) \r\n" + 
-						"VALUES ("+ idReserva+"| "+ aleat +");\n" );
+						"VALUES ( SEQ_HOT_RESERVA.CURRVAL | "+ aleat +");\n" );
 				System.out.print("INSERT INTO HOT_LINEA (ID_RESERVA| ID_SERVICIO) \r\n" + 
-						"VALUES ("+ idReserva+"| "+ aleat2 +");\n" );
+						"VALUES ( SEQ_HOT_RESERVA.CURRVAL | "+ aleat2 +");\n" );
 				precio=listaServicios[(aleat-1)].getPrecioDia() + listaServicios[(aleat2-1)].getPrecioDia();
 			}else if(numAleat==3) {
 				aleat = r.nextInt(10-1)+1;
@@ -164,11 +164,11 @@ public class PackServicio {
 				
 				
 				System.out.print("INSERT INTO HOT_LINEA (ID_RESERVA| ID_SERVICIO) \r\n" + 
-						"VALUES ("+ idReserva+"| "+ aleat +");\n" );
+						"VALUES ( SEQ_HOT_RESERVA.CURRVAL | "+ aleat +");\n" );
 				System.out.print("INSERT INTO HOT_LINEA (ID_RESERVA| ID_SERVICIO) \r\n" + 
-						"VALUES ("+ idReserva+"| "+ aleat2 +");\n" );
+						"VALUES ( SEQ_HOT_RESERVA.CURRVAL | "+ aleat2 +");\n" );
 				System.out.print("INSERT INTO HOT_LINEA (ID_RESERVA| ID_SERVICIO) \r\n" + 
-						"VALUES ("+ idReserva+"| "+ aleat3 +");\n" );
+						"VALUES ( SEQ_HOT_RESERVA.CURRVAL | "+ aleat3 +");\n" );
 				precio=listaServicios[(aleat-1)].getPrecioDia() + listaServicios[(aleat2-1)].getPrecioDia() + listaServicios[(aleat3-1)].getPrecioDia();
 				
 			}else if(numAleat==4) {
@@ -290,13 +290,13 @@ public class PackServicio {
 				
 				
 				System.out.print("INSERT INTO HOT_LINEA (ID_RESERVA| ID_SERVICIO) \r\n" + 
-						"VALUES ("+ idReserva+"| "+ aleat +");\n" );
+						"VALUES ( SEQ_HOT_RESERVA.CURRVAL | "+ aleat +");\n" );
 				System.out.print("INSERT INTO HOT_LINEA (ID_RESERVA| ID_SERVICIO) \r\n" + 
-						"VALUES ("+ idReserva+"| "+ aleat2 +");\n" );
+						"VALUES ( SEQ_HOT_RESERVA.CURRVAL | "+ aleat2 +");\n" );
 				System.out.print("INSERT INTO HOT_LINEA (ID_RESERVA| ID_SERVICIO) \r\n" + 
-						"VALUES ("+ idReserva+"| "+ aleat3 +");\n" );
+						"VALUES ( SEQ_HOT_RESERVA.CURRVAL | "+ aleat3 +");\n" );
 				System.out.print("INSERT INTO HOT_LINEA (ID_RESERVA| ID_SERVICIO) \r\n" + 
-						"VALUES ("+ idReserva+"| "+ aleat4 +");\n" );
+						"VALUES ( SEQ_HOT_RESERVA.CURRVAL | "+ aleat4 +");\n" );
 				precio=listaServicios[(aleat-1)].getPrecioDia() + listaServicios[(aleat2-1)].getPrecioDia() 
 						+ listaServicios[(aleat3-1)].getPrecioDia() + listaServicios[(aleat4-1)].getPrecioDia();
 			}

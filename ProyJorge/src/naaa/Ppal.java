@@ -121,7 +121,7 @@ public class Ppal {
 		
 		PackServicio pack = new PackServicio();
 		
-		for(int i=0; i < 120; i++) {
+		for(int i=0; i < 80; i++) {
 			
 			
 			int ale = r.nextInt(8-1)+1;
@@ -132,13 +132,20 @@ public class Ppal {
 			LocalDate salida = entrada.plusDays(ale);
 			
 			
-			precio=pack.generarServicios(aleServ, i, precio);
-			
+//			System.out.print("INSERT INTO HOT_RESERVA (ID_RESERVA| ID_CLIENTE| ID_HABITACION| CHECK_IN| CHECK_OUT| PRECIO_HAB_DIA| PRECIO_SERV_DIA| PRECIO_TOTAL) \r\n" + 
+//					"VALUES ("+ (i+650) +"| "+ listaCliente[aleC] +"| " + 1 +"| TO_DATE('"+ entrada 
+//					+" 15:00'| 'YYYY-MM-DD HH24:MI')| TO_DATE('"+ salida +" 12:00'| 'YYYY-MM-DD HH24:MI')| " + pHab10[i] + "| " + precio );
+//			System.out.printf("| %.2f);\n",((pHab1[i]+precio)*ale));
+//			
+//			precio=pack.generarServicios(aleServ, (i+650), precio);
+//			
 			
 			System.out.print("INSERT INTO HOT_RESERVA (ID_RESERVA| ID_CLIENTE| ID_HABITACION| CHECK_IN| CHECK_OUT| PRECIO_HAB_DIA| PRECIO_SERV_DIA| PRECIO_TOTAL) \r\n" + 
-					"VALUES ("+ i +"| "+ listaCliente[aleC] +"| " + 10 +"| TO_DATE('"+ entrada 
+					"VALUES ( SEQ_HOT_RESERVA.NEXTVAL | "+ listaCliente[aleC] +"| " + 1 +"| TO_DATE('"+ entrada 
 					+" 15:00'| 'YYYY-MM-DD HH24:MI')| TO_DATE('"+ salida +" 12:00'| 'YYYY-MM-DD HH24:MI')| " + pHab10[i] + "| " + precio );
 			System.out.printf("| %.2f);\n",((pHab1[i]+precio)*ale));
+			
+			precio=pack.generarServicios(aleServ, precio);
 			
 			entrada = salida.plusDays(ale2);
 			
