@@ -102,14 +102,19 @@ public class Ppal {
 			
 			
 
-			precio=pack.generarServicios(aleServ, (i+1), precio);
+			
 			
 
 			System.out.print("INSERT INTO HOT_RESERVA (ID_RESERVA| ID_CLIENTE| ID_HABITACION| CHECK_IN| CHECK_OUT| PRECIO_HAB_DIA| PRECIO_SERV_DIA| PRECIO_TOTAL) \r\n" + 
-					"VALUES ( " + (i+1) + " | "+ listaCliente[aleC] +"| " + 2 +"| TO_DATE('"+ entrada 
-					+" 15:00'| 'YYYY-MM-DD HH24:MI')| TO_DATE('"+ salida +" 12:00'| 'YYYY-MM-DD HH24:MI')| " + pHab2[i] + "| " + precio );
-			System.out.printf("| %.2f);\n",((pHab2[i]+precio)*ale));
+					"VALUES ( " + (i+1) + " | "+ listaCliente[aleC] +"| " + 1 +"| TO_DATE('"+ entrada 
+					+" 15:00'| 'YYYY-MM-DD HH24:MI')| TO_DATE('"+ salida +" 12:00'| 'YYYY-MM-DD HH24:MI')| " + pHab1[i] + "| " + 0 );
+			System.out.printf("| %.2f);\n", 0.0 );
 			
+			precio=pack.generarServicios(aleServ, (i+1), precio);
+			
+			
+			System.out.printf("UPDATE HOT_RESERVA SET PRECIO_SERV_DIA = %.2f| PRECIO_TOTAL = %.2f\r",precio, ((pHab1[i]+precio)*ale) );
+			System.out.println("WHERE ID_RESERVA = " + (i+1) + ";");
 			
 			
 			entrada = salida.plusDays(ale2);
